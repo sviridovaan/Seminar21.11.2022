@@ -1,14 +1,14 @@
 ﻿Console.Clear();
-Console.Write("Введите число: ");
+Console.WriteLine("Введите числоA: ");
 int numberA = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите числоB: ");
 int numberB = int.Parse(Console.ReadLine());
-int squareA = numberA*numberA;
-if(numberB==squareA);
-{
-    Console.WriteLine("yes");
-    else
-    {
-        Console.WriteLine("No");
-    }
-}
 
+if (numberA == numberB * numberB)
+{
+    Console.Write("Все верно");
+}
+else
+{
+    Console.Write($"Число A = {numberA} не является квадратом числа B = {numberB}");
+}
